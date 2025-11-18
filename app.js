@@ -7,18 +7,19 @@ const changetextimage = document.getElementById("change-text-image");
 const changeimagetext = document.getElementById("change-image-text");
 const changepbackground = document.getElementById("change-p-background");
 const activatealert = document.getElementById("activate-alert");
+const playAudio = document.getElementById('play-audio');
 
-    function changeColorPurple() {
-        document.body.style.background = 'purple'; 
-    }
+function changeColorPurple() {
+    document.body.style.background = 'purple'; 
+}
     function changeBackgroundImage() {
         document.body.style.backgroundImage = "url(./assets/dog.png)";
     }
     function changeRedPText() {
-        document.body.style.color = 'red';
+        document.body.style.backgroundColor = 'red';
     }
     function changeDivBackground() {
-        document.body.style.background = 'green';
+        document.getElementById('your-div-id').style.backgroundColor = 'green';
     }
     function changeTextImage() {
         document.body.style.text = "I put creative words here";
@@ -32,23 +33,21 @@ const activatealert = document.getElementById("activate-alert");
     function ActivateAlert() {
         document.body.style.activatealert = "play-alert";
     }
-    
-    
-    
-    const playAudio = document.getElementById('play-audio');
-    document.getElementById('playButton').addEventListener('click', function() {
-    if (playAudio.paused) {
-        playAudio.play();
-        this.textContent = 'Pause';
-    } else {
-        playAudio.pause();
-        this.textContent = 'Play';
+    function PlayAudio() {
+        document.getElementById('playButton').addEventListener('click', function() {
+            if (playAudio.paused) {
+                playAudio.play();
+                this.textContent = 'Pause';
+            } else {
+                playAudio.pause();
+                this.textContent = 'Play';
+            }
+        });
     }
-    });
     
     textrandom.addEventListener("click", () => {
     const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    document.body.style.textDecorationColor = randomColor;
+    document.body.style.color = randomColor;
     });
 
 
