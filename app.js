@@ -16,10 +16,10 @@ function changeColorPurple() {
         document.body.style.backgroundImage = "url(./assets/dog.png)";
     }
     function changeRedPText() {
-        document.body.style.backgroundColor = 'red';
+        document.getElementById("change-red-ptext").style.backgroundColor = 'red';
     }
     function changeDivBackground() {
-        document.getElementById('your-div-id').style.backgroundColor = 'green';
+        document.getElementById("change-div-background").style.backgroundColor = 'green';
     }
     function changeTextImage() {
         document.body.style.text = "I put creative words here";
