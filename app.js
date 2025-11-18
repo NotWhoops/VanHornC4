@@ -7,7 +7,6 @@ const changetextimage = document.getElementById("change-text-image");
 const changeimagetext = document.getElementById("change-image-text");
 const changepbackground = document.getElementById("change-p-background");
 const activatealert = document.getElementById("activate-alert");
-const playAudio = document.getElementById('play-audio');
 
 function changeColorPurple() {
     document.body.style.background = 'purple'; 
@@ -31,18 +30,7 @@ function changeColorPurple() {
         document.getElementById("change-p-background").style.image = "url(./assets/dog.png)";
     }
     function ActivateAlert() {
-        document.body.style.activatealert = "play-alert";
-    }
-    function PlayAudio() {
-        document.getElementById('playButton').addEventListener('click', function() {
-            if (playAudio.paused) {
-                playAudio.play();
-                this.textContent = 'Pause';
-            } else {
-                playAudio.pause();
-                this.textContent = 'Play';
-            }
-        });
+        document.getElementById("activate-alert").style.alert = alert("YaY! Alert Time!");
     }
     
     textrandom.addEventListener("click", () => {
@@ -61,4 +49,3 @@ function changeColorPurple() {
     changeimagetext.addEventListener('click', changeImageText);
     changepbackground.addEventListener('click', changePBackground);
     activatealert.addEventListener('click', ActivateAlert);
-    playAudio.addEventListener('click',PlayAudio);
