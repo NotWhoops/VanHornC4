@@ -16,10 +16,10 @@ function changeColorPurple() {
         document.body.style.backgroundImage = "url(./assets/dog.png)";
     }
     function changeRedPText() {
-        document.getElementById("change-red-ptext").style.backgroundColor = 'red';
+        document.getElementById("ptag").style.backgroundColor = 'red';
     }
     function changeDivBackground() {
-        document.getElementById("change-div-background").style.backgroundColor = 'green';
+        document.getElementById("div").style.backgroundColor = 'green';
     }
     function changeTextImage() {
         document.body.style.text = "I put creative words here";
@@ -28,7 +28,7 @@ function changeColorPurple() {
         document.body.style.image = "url(./assets/dog.png)";
     }
     function changePBackground() {
-        document.body.style.background = "url(./assets/dog.png)";
+        document.getElementById("change-p-background").style.image = "url(./assets/dog.png)";
     }
     function ActivateAlert() {
         document.body.style.activatealert = "play-alert";
